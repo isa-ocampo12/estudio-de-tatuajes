@@ -1,0 +1,186 @@
+body{
+    /* background: linear-gradient(black, gray); */
+    background-image: url('imagenes/fondoo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%; /* Asegura que el body ocupe el 100% de la altura de la ventana */
+    margin: 0; /* Elimina cualquier margen por defecto */
+    font-family: "Arial", sans-serif;
+}
+/* Menu y encabezado */
+.cabecera{
+    width: 100%;
+    height: 100px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo img{
+    width: 85px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu ul li{
+    margin-right: 15px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+/* sesion 1  */
+.banner-principal{
+    width: 100%;
+    height: 600px;
+    background-image: url(/imagenes/banner.webp);
+    background-size: 100%;
+    /* para mover la imagen o=lados -100px= arriba o abajo cuando es negativo es hacia abajo */
+    background-position: 0 -100px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-principal div{
+    width: 500px;
+    height: 200px;
+    /* background-color: white; */
+    text-align: center;
+
+
+}
+.banner-principal div h1{
+    margin: 0;
+    font-size: 50px;  
+    text-align: center; 
+    color: white;
+}
+.banner-principal div p,
+.banner-principal div a{
+    font-size: 20px;
+    align-items: center;
+    text-align:center;
+    color: white;
+}
+.banner-principal div a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 20px;  
+}
+/* sesion 2 */
+.flotante{
+    display: flex;
+    justify-content: center;
+}
+.flotante div,
+.slider div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%; 
+    position: absolute;
+    margin-top: -80px;
+    
+}
+.flotante div img,
+.galeria div figure img,
+.slider div img{
+    width: 200px;
+    height: 200px; 
+}
+/* sesion2 galeria */
+.galeria,
+.blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;   
+}
+.galeria h2,
+.blog h2,
+.slider h2{
+    font-size: 50px;
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+}
+.galeria div,
+.blog div,
+.testimonio article{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.galeria div figure{
+    margin: 0;
+    margin: 15px;
+    text-align: center;
+}
+/* sesion3 articulos */
+.blog div {
+    justify-content: space-between;
+    color: white;
+}
+.blog div article{
+    width: 48%;   
+}
+.blog div article img{
+    width: 100%;
+    height: 50%;
+}
+/* sesion3 aliados */
+.slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider div{
+    position: relative;
+    margin-top: 20px;
+}
+.slider-header{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+/* sesion5 testimonio */
+.testimonio{
+    display: flex;
+    justify-content: center;
+}
+.testimonio article{
+    margin-top: 100px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.testimonio article div{
+    color: white;
+}
+.testimonio article figure img{
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+}
+/* sesion6 pie de pagina */
+.pie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    width: 100%;
+    height: 150px;
+}
+.pie div img{
+    width: 50px;
+}
+
+
+
